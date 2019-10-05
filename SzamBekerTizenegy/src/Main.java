@@ -10,12 +10,9 @@ public class Main {
 		int szamlalo = 0;
 		try {
 			while (szam != 11) {
-
 				System.out.print("Adj meg egy számot: ");
-
 				szam = be.nextInt();
 				szamlalo++;
-
 			}
 
 		} catch (Exception e) {
