@@ -1,5 +1,3 @@
-package isFibonacci;
-
 import java.util.Scanner;
 
 public class Main {
@@ -15,21 +13,24 @@ public class Main {
 			tomb[i] = be.nextInt();
 		}
 
-		int fibo = 0;
+		int counter = 0;
+		int oszto = tomb[1] / tomb[0];
+		
+		for (int i = 0; i < tomb.length - 1; i++) {
 
-		for (int i = 0; i < tomb.length - 2; i++) {
-
-			if (tomb[i] + tomb[i + 1] == tomb[i + 2]) {
-				fibo++;
+			if (tomb[i+1] / tomb[i] == oszto) {
+				counter++;
 			}
 		}
 
-		if (fibo == tomb.length - 2) {
-			System.out.println("Fibonacci");
+		if (counter == tomb.length-1) {
+			System.out.println("Mertani");
 		} else {
-			System.out.println("NEm Fibonacci");
+			System.out.println("NEm Mertani");
 		}
 
 	}
 
 }
+
+//1 2 4 8 16 32
