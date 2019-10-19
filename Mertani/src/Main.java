@@ -12,7 +12,7 @@ public class Main {
 			System.out.print(i + 1 + ". szam: ");
 			tomb[i] = be.nextInt();
 		}
-
+		
 		int counter = 0;
 		int oszto = tomb[1] / tomb[0];
 		
@@ -28,6 +28,7 @@ public class Main {
 		} else {
 			System.out.println("NEm Mertani");
 		}
+		
 
 	}
 
